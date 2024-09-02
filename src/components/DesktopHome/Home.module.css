@@ -47,7 +47,7 @@ z-index: 5;
   position: absolute;
 left: 10%;
 font-size: 3vw;
-
+color: #9BCE2B;
 }
 .whiteBannerContentimg {
 
@@ -100,7 +100,7 @@ width: 80%;
   
 }
 .yellowBannerContent h2{
-  color: red;
+  color: #440603;
   /* max-width: 500px; */
    white-space: nowrap;
    margin-top: -30%;
@@ -161,7 +161,7 @@ width: 100%;
   margin-top: 7%;
   font-size: 3vw;
    white-space: nowrap;
-
+color: #fff;
 }
 .jamun{
   margin-top: -10%;
@@ -221,7 +221,7 @@ width: 100%;
   display: flex;flex-direction: column;
 }
 .pinkBannerContentRight h2{
-  color: red;
+  color: #B800DB;
   margin-left: 50px;
   font-size: 3vw;
   margin-top: -5%;
@@ -273,6 +273,7 @@ width: 100%;
 margin-top: 7%;
 font-size: 3vw;
 margin-left: 5%;
+color: #EF052B;
 }
 .mixFruit2{
 margin-left: 5%;
@@ -397,7 +398,6 @@ width: 100%;
 }
 
 .pinkBannerContentRight h2{
-  color: red;
   margin-left: 0px;
   font-size: 3vw;
   margin-top: -10%;

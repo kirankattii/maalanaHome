@@ -61,6 +61,7 @@ width: 50%;
      white-space: nowrap;
      margin-left: 3%;
      margin-top:14%;
+     color: #9BCE2B;
 }
 .sourFruit {
   margin-top: 50%;
@@ -102,6 +103,8 @@ margin-top: -95%;
 .yellowBannerContainer h2{
   margin-top: -18%;
   margin-left: 35%;
+  color: #440603;
+  font-size: 5vw;
 }
 .mangoBox {
   z-index: 1;
@@ -155,6 +158,7 @@ z-index: 2;
      white-space: nowrap;
      margin-left: 3%;
      margin-top:-5%;
+     color: #fff;
 }
 .jamun{
   margin-top: 10%;
@@ -209,6 +213,7 @@ z-index: 2;
      white-space: nowrap;
      margin-top:25%;
      padding-right: 5%;
+     color: #B800DB;
 }
 
 .candy1 img{
@@ -254,7 +259,7 @@ z-index: 2;
   margin-top: -6%;
     font-size: 4.5vw;
      white-space: nowrap;
-  
+  color: #EF052B;
 }
 .greenBannerLeft{
   display: flex;
