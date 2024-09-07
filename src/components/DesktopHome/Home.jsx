@@ -2,6 +2,7 @@ import { useState } from "react"
 import { assets } from "../../assets/assets"
 import HomeComponent from "../HomeComponent"
 import styles from "./Home.module.css"
+import { motion } from "framer-motion"
 
 const Home = () => {
 	// State to track if shatter is clicked
@@ -15,11 +16,25 @@ const Home = () => {
 		<div className={styles.container}>
 			<div className={styles.topBanner}>
 				<div className={styles.topBannerImg1}>
-					<img
+					<motion.img
+						initial={{ x: -100, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{
+							delay: 0.2,
+							x: { type: "spring", stiffness: 60 },
+							opacity: { duration: 0.8 },
+							ease: "easeIn",
+							duration: 0.8,
+						}}
 						src={assets.bannerText}
 						alt=""
 					/>
-					<img
+					<motion.img
+						initial={{ scale: 0.5 }}
+						whileInView={{ scale: 1 }}
+						transition={{
+							duration: 0.4,
+						}}
 						src={assets.sourLmli}
 						alt=""
 					/>
@@ -34,11 +49,26 @@ const Home = () => {
 					/>
 				</div>
 				<div className={styles.whiteBannerContent}>
-					<h2>
+					<motion.h2
+						initial={{ x: -100, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{
+							delay: 0.2,
+							x: { type: "spring", stiffness: 60 },
+							opacity: { duration: 0.8 },
+							ease: "easeIn",
+							duration: 0.8,
+						}}
+					>
 						A Sweet and Sour Trip <br /> Down Memory Lane!
-					</h2>
+					</motion.h2>
 					<div className={styles.whiteBannerContentimg}>
-						<img
+						<motion.img
+							initial={{ scale: 0.5 }}
+							whileInView={{ scale: 1 }}
+							transition={{
+								duration: 0.5,
+							}}
 							src={assets.sourFruit}
 							alt=""
 						/>
@@ -61,17 +91,41 @@ const Home = () => {
 				</div>
 				<div className={styles.yellowBannerContent}>
 					<div className={styles.manogBoxImg}>
-						<img
+						<motion.img
+							initial={{ scale: 0.5 }}
+							whileInView={{ scale: 1 }}
+							transition={{
+								duration: 0.5,
+							}}
 							src={assets.mangoBox}
 							alt=""
 						/>
 					</div>
-					<h2>
+					<motion.h2
+						initial={{ y: 150, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						transition={{
+							delay: 0.2,
+							y: { type: "spring", stiffness: 60 },
+							opacity: { duration: 0.8 },
+							ease: "easeIn",
+							duration: 0.8,
+						}}
+					>
 						Mango Magic <br />
 						in Every Katli!
-					</h2>
+					</motion.h2>
 					<div className={styles.manogkid}>
-						<img
+						<motion.img
+							initial={{ x: 100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{
+								delay: 0.2,
+								x: { type: "spring", stiffness: 60 },
+								opacity: { duration: 0.8 },
+								ease: "easeIn",
+								duration: 0.8,
+							}}
 							src={assets.mangoKid}
 							alt=""
 						/>
@@ -95,18 +149,42 @@ const Home = () => {
 				</div>
 				<div className={styles.purpleBannerContent}>
 					<div className={styles.purpleBannerContentleft}>
-						<h2>
+						<motion.h2
+							initial={{ x: -100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{
+								delay: 0.2,
+								x: { type: "spring", stiffness: 60 },
+								opacity: { duration: 0.8 },
+								ease: "easeIn",
+								duration: 0.8,
+							}}
+						>
 							Jamun Flavor, <br /> Anytime Craving Savior!
-						</h2>
+						</motion.h2>
 						<div className={styles.jamun}>
-							<img
+							<motion.img
+								initial={{ scale: 0.5 }}
+								whileInView={{ scale: 1 }}
+								transition={{
+									duration: 0.5,
+								}}
 								src={assets.jamun}
 								alt=""
 							/>
 						</div>
 					</div>
 					<div className={styles.lollipop}>
-						<img
+						<motion.img
+							initial={{ x: 100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{
+								delay: 0.2,
+								x: { type: "spring", stiffness: 60 },
+								opacity: { duration: 0.8 },
+								ease: "easeIn",
+								duration: 0.8,
+							}}
 							src={assets.lollipop}
 							alt=""
 						/>
@@ -129,21 +207,41 @@ const Home = () => {
 				</div>
 				<div className={styles.pinkBannerContent}>
 					<div className={styles.candy1}>
-						<img
+						<motion.img
+							initial={{ scale: 0.5 }}
+							whileInView={{ scale: 1 }}
+							transition={{
+								duration: 0.5,
+							}}
 							src={assets.candies2}
 							alt=""
 						/>
 					</div>
 					<div className={styles.pinkBannerContentRight}>
 						<div className={styles.mixfruits1}>
-							<img
+							<motion.img
+								initial={{ scale: 0.5 }}
+								whileInView={{ scale: 1 }}
+								transition={{
+									duration: 0.5,
+								}}
 								src={assets.mixfruits1}
 								alt=""
 							/>
 						</div>
-						<h2>
+						<motion.h2
+							initial={{ y: 100, opacity: 0 }}
+							whileInView={{ y: 0, opacity: 1 }}
+							transition={{
+								delay: 0.2,
+								y: { type: "spring", stiffness: 60 },
+								opacity: { duration: 0.8 },
+								ease: "easeIn",
+								duration: 0.8,
+							}}
+						>
 							Sweet, Tangy, <br /> and Totally Fun!
-						</h2>
+						</motion.h2>
 					</div>
 				</div>
 				<div className={styles.line4}>
@@ -163,17 +261,37 @@ const Home = () => {
 				</div>
 				<div className={styles.greenBannerContent}>
 					<div className={styles.mixFruit2}>
-						<img
+						<motion.img
+							initial={{ scale: 0.5 }}
+							whileInView={{ scale: 1 }}
+							transition={{
+								duration: 0.5,
+							}}
 							src={assets.mixfruits2}
 							alt=""
 						/>
 					</div>
-					<h2>
+					<motion.h2
+						initial={{ y: 100, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						transition={{
+							delay: 0.2,
+							y: { type: "spring", stiffness: 60 },
+							opacity: { duration: 0.8 },
+							ease: "easeIn",
+							duration: 0.8,
+						}}
+					>
 						Assorted Flavors,
 						<br /> Double the Fun!
-					</h2>
+					</motion.h2>
 					<div className={styles.candies2}>
-						<img
+						<motion.img
+							initial={{ scale: 0.5 }}
+							whileInView={{ scale: 1 }}
+							transition={{
+								duration: 0.5,
+							}}
 							src={assets.candies1}
 							alt=""
 						/>

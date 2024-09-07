@@ -3,7 +3,7 @@
   max-width: 450px;
   min-height: 100vh;
   /* background: #000; */
-
+overflow: hidden;
  margin:0 auto;
 }
 .topBanner{
